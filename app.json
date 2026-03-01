@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "SHARK ULTRA",
+    "slug": "shark-ultra-pro",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "platforms": ["android", "ios", "web"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.sharkiptv.pro",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_PROJECT_ID_HERE"
+      }
+    }
+  }
+}
