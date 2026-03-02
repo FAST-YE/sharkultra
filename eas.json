@@ -1,19 +1,25 @@
 {
   "cli": {
-    "version": ">= 14.0.0",
-    "appVersionSource": "remote"
+    "version": ">= 14.0.0"
   },
   "build": {
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      },
-      "node": "20.x"
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "production": {
+    "preview": {
+      "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
